@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Organize seus projetos e acompanhe o progresso com o ParaTrello.">
+  <title>ParaTrello | Meus Projetos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-page">
+  <!-- Sidebar compartilhada -->
+  <aside class="app-sidebar" aria-label="Navegação do ParaTrello">
+    <span class="sidebar-toggle-hint" aria-hidden="true">›</span>
+    <a class="sidebar-brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">T</span>
+      <span>ParaTrello</span>
+    </a>
+    <nav class="sidebar-navigation">
+      <a class="sidebar-link sidebar-home-link" href="index.html">
+        <span aria-hidden="true">⌂</span> Meus projetos
+      </a>
+      <h2 class="sidebar-section-title">Seus projetos</h2>
+      <ul class="sidebar-project-list" aria-live="polite"></ul>
+    </nav>
+    <p class="sidebar-caption">Seu espaço de trabalho</p>
+  </aside>
+
+  <div class="dashboard-layout">
+    <!-- Cabeçalho global -->
+    <header class="app-header">
+      <a class="brand" href="index.html" aria-label="ParaTrello — início">
+        <span class="brand-mark" aria-hidden="true">T</span>
+        <span>ParaTrello</span>
+      </a>
+      <div class="profile-avatar" role="img" aria-label="Perfil de Ana Lima">AL</div>
+    </header>
+
+    <main class="dashboard-main">
+      <!-- Apresentação e ação principal -->
+      <section class="dashboard-hero" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">BEM-VINDO AO PARATRELLO</p>
+          <h1 id="page-title">Meus Projetos</h1>
+          <p class="hero-description">Organize suas ideias e acompanhe cada entrega no ParaTrello.</p>
+        </div>
+        <button class="button button-primary" id="create-project-button" type="button">+ Criar Novo Projeto</button>
+      </section>
+
+      <!-- Grade de projetos -->
+      <section class="projects-section" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <h2 id="projects-title">Projetos recentes</h2>
+          <span class="project-count" aria-live="polite">0 projetos</span>
+        </div>
+
+        <div class="project-grid" aria-live="polite"></div>
+      </section>
+    </main>
+  </div>
+  <script src="js/app.js" defer></script>
+  <script src="js/index.js" defer></script>
+</body>
+</html>

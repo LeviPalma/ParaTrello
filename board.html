@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Organize as tarefas do seu projeto no ParaTrello.">
+  <title>ParaTrello</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="board-page">
+  <!-- Sidebar compartilhada -->
+  <aside class="app-sidebar" aria-label="Navegação do ParaTrello">
+    <span class="sidebar-toggle-hint" aria-hidden="true">›</span>
+    <a class="sidebar-brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">T</span>
+      <span>ParaTrello</span>
+    </a>
+    <nav class="sidebar-navigation">
+      <a class="sidebar-link sidebar-home-link" href="index.html">
+        <span aria-hidden="true">⌂</span> Meus projetos
+      </a>
+      <h2 class="sidebar-section-title">Seus projetos</h2>
+      <ul class="sidebar-project-list" aria-live="polite"></ul>
+    </nav>
+    <p class="sidebar-caption">Seu espaço de trabalho</p>
+  </aside>
+
+  <!-- Cabeçalho do projeto -->
+  <header class="board-header">
+    <a class="button button-secondary back-button" href="index.html">&larr; Voltar</a>
+    <a class="brand board-brand" href="index.html" aria-label="ParaTrello — início">
+      <span class="brand-mark" aria-hidden="true">T</span>
+      <span>ParaTrello</span>
+    </a>
+    <h1 class="board-title">ParaTrello</h1>
+    <div class="profile-avatar" role="img" aria-label="Perfil de Ana Lima">AL</div>
+  </header>
+
+  <!-- As listas do projeto aparecem aqui -->
+  <main class="board-canvas" aria-label="Quadro do projeto">
+    <div class="board-columns">
+      <button class="add-column-button" type="button">+ Adicionar nova lista</button>
+    </div>
+  </main>
+  <script src="js/app.js" defer></script>
+  <script src="js/board.js" defer></script>
+</body>
+</html>
